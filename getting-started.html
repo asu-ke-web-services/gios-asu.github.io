@@ -132,12 +132,22 @@
             <code>bootstrap-asu-theme-base.css</code> is an initial set of CSS that themes the your website to the default ASU theme.  This file can be customized by editing the SCSS files that are found in <code>/scss/custom</code> in the GitHub repo and compiling them.
           </p>
 
-          <h2>Visual</h2>
-          <p>Visually, how your website will be set up is like so:</p>
-          <img src="./img/your-website.png" class="img-responsive" />
-          <p>
-            When customizing your website, the only file you will change is the <code>bootstrap-asu-theme-base.css</code>.  
-          </p>
+          <h2>Structure</h2>
+          <pre><code class="bash">webroot/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap-asu.css             - Precompiled for you
+│   ├── bootstrap-asu-theme-base.css  - Precompiled for you, 
+│   |                                 |  but you can modify this
+|   |                                 |  file to change your theme
+├── js/
+│   ├── bootstrap.js
+└── fonts/
+    ├── fontawesome-webfont.eot
+    ├── fontawesome-webfont.svg
+    ├── fontawesome-webfont.ttf
+    ├── fontawesome-webfont.woff
+    └── FontAwesome.otf</code></pre>
         </div>
 
         <div class="bs-docs-section">
