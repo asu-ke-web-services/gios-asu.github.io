@@ -107,7 +107,7 @@
         <div class="bs-docs-section">
           <h1 id="download" class="page-header">Download</h1>
 
-          <p class="lead">The ASU Web Standards Bootstrap Addon is available threw Github.  The raw SCSS files and the current CSS build are available in the repository.</p>
+          <p class="lead">The ASU Web Standards Bootstrap Addon is available through Github.  The raw SCSS files and the current CSS build are available in the repository.</p>
 
           <a href="https://github.com/gios-asu/ASU-Bootstrap-Addon" class="btn btn-primary btn-lg" role="button">Download the Web Standards</a>
         
@@ -128,9 +128,26 @@
           <p>
             <code>bootstrap-asu.css</code> is the latest build from the GitHub Repo of the ASU Web Standards.
           </p>
+
           <p>
             <code>bootstrap-asu-theme-base.css</code> is an initial set of CSS that themes the your website to the default ASU theme.  This file can be customized by editing the SCSS files that are found in <code>/scss/custom</code> in the GitHub repo and compiling them.
           </p>
+
+          <p>
+            Your footer tag might look like this:
+          </p>
+
+          <pre class="prettyprint lang-html"><code>&lt;script src=&quot;./js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;./js/bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;./js/bootstrap-asu.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+            <div class="alert alert-warning alert-dismissable">
+              <strong>Watch Out!</strong> The Web Standards require <a href="http://getbootstrap.com/">Bootstrap</a> to work properly.
+            </div>
+
+            <div class="alert alert-warning alert-dismissable">
+              <strong>Watch Out!</strong> Bootstrap requires <a href="http://jquery.com/">jQuery</a> for full functionality.
+            </div>
 
           <h2>Structure</h2>
           <p>
@@ -169,9 +186,6 @@
     ├── <b>fontawesome-webfont.woff</b>
     └── <b>FontAwesome.otf</b></code></pre>
 
-        <div class="alert alert-warning alert-dismissable">
-          <strong>Watch Out!</strong> Bootstrap requires <a href="http://jquery.com/">jQuery</a> for full functionality.
-        </div>
         </div>
 
         <div class="bs-docs-section">
