@@ -133,21 +133,40 @@
           </p>
 
           <h2>Structure</h2>
-          <pre><code class="bash">webroot/
+          <p>
+            Once downloaded, you will need the following files from the Github repository:
+          </p>
+          <pre><code class="bash">/build/
 ├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap-asu.css             - Precompiled for you
-│   ├── bootstrap-asu-theme-base.css  - Precompiled for you, 
-│   |                                 |  but you can modify this
-|   |                                 |  file to change your theme
+|   ├── bootstrap-asu.css
+|   └── bootstrap-asu-theme-base.css
 ├── js/
-│   ├── bootstrap.js
+│   ├── bootstrap-asu.js
 └── fonts/
     ├── fontawesome-webfont.eot
     ├── fontawesome-webfont.svg
     ├── fontawesome-webfont.ttf
     ├── fontawesome-webfont.woff
-    └── FontAwesome.otf</code></pre>
+    └── FontAwesome.otf
+</code></pre>
+          <p>
+          This is the most basic form of the Web Standards.  They are precompiled files for quick drop-in usage of any project that uses Bootstrap.  We provide CSS, JS, and font files for convenience. Fonts from FontAwesome are included.
+          </p>
+          <p>When integrating the Web Standards into a Bootstrap project, you will get the following directory structure:</p>
+          <pre><code class="bash">webroot/
+├── css/
+│   ├── bootstrap.css
+│   ├── <b>bootstrap-asu.css</b>
+│   ├── <b>bootstrap-asu-theme-base.css</b>
+├── js/
+│   ├── bootstrap.js
+│   ├── <b>bootstrap-asu.js</b>
+└── fonts/
+    ├── <b>fontawesome-webfont.eot</b>
+    ├── <b>fontawesome-webfont.svg</b>
+    ├── <b>fontawesome-webfont.ttf</b>
+    ├── <b>fontawesome-webfont.woff</b>
+    └── <b>FontAwesome.otf</b></code></pre>
         </div>
 
         <div class="bs-docs-section">
