@@ -117,12 +117,10 @@
             The Web Standards are built on top of Bootstrap and require the Google Font &quot;Roboto&quot;.  The following is an example of what your <b>head</b> tag might look like:
           </p>
 
-          <pre class="prettyprint lang-html">
-          <code>&lt;link href=&#39;//fonts.googleapis.com/css?family=Roboto:900,400,300,700,500&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39; /&gt;&lt;!-- The main app css file --&gt;
+          <pre class="prettyprint lang-html"><code>&lt;link href=&#39;//fonts.googleapis.com/css?family=Roboto:900,400,300,700,500&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39; /&gt;&lt;!-- The main app css file --&gt;
 &lt;link href=&quot;./css/bootstrap.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
 &lt;link href=&quot;./css/bootstrap-asu.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-&lt;link href=&quot;./css/bootstrap-asu-theme-base.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code>
-          </pre>
+&lt;link href=&quot;./css/bootstrap-asu-theme-base.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code></pre>
 
           <p>
             <code>bootstrap.css</code> would be the latest version of Twitter's Bootstrap.
@@ -131,12 +129,36 @@
             <code>bootstrap-asu.css</code> is the latest build from the GitHub Repo of the ASU Web Standards.
           </p>
           <p>
-            <code>bootstrap-asu-theme-base.css</code> is an initial set of CSS that themese the your website to the default ASU theme.  This file can be customized by editing the SCSS files that are found <code>/scss/custom</code> in the GitHub repo and compiling them.
+            <code>bootstrap-asu-theme-base.css</code> is an initial set of CSS that themes the your website to the default ASU theme.  This file can be customized by editing the SCSS files that are found in <code>/scss/custom</code> in the GitHub repo and compiling them.
+          </p>
+        </div>
+
+        <div class="bs-docs-section">
+          <h1 id="theming" class="page-header">Theming</h1>
+          <p>
+            Theming is done by creating your own <code>boostrap-asu-theme-base.css</code>.  This CSS file controls only the colors that appear on your website.
+          </p>
+          <p>
+            The SASS files that are used to create a theme base are in <code>scss/custom</code>. The <code>_variable.scss</code> file contains all of the color codes used to theme an ASU website. 
+          </p>
+          <p>
+            In order to compile your SASS files into a CSS file, use a SASS processor to compile <code>bootstrap-asu-theme-base.scss</code>.  This will create a custom version of <code>boostrap-asu-theme-base.css</code> that you can use on your website.
+        </div>
+      </div>
+
+      <!-- Begin Sidebar -->
+      <div class="col-md-4 col-md-push-8">
+        <div id="sidebarNav" class="sidebar-nav affix-top">
+          <h4>Navigate this Doc</h4>
+          <!-- List Group, linked items -->
+          <div class="list-group">
+            <a class="list-group-item" data-scroll="" href="#download">Download</a>
+            <a class="list-group-item" data-scroll="" href="#theming">Theming</a>
           </div>
         </div>
-      </p>
+      </div>
+      <!-- End Sidebar -->
     </div>
-  </div>
 <!-- Begin Footer -->
 
   <div class="footer">
