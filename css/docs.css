@@ -2,8 +2,12 @@
   background-image: url(../img/img-hero-default.jpg) !important;
 }
 
+.border-thick {
+  border: 1px solid black !important;
+}
+
 .border {
-  border: 1px dotted black !important;
+  border: 1px dotted red !important;
 }
 
 .hero-bg-img {
@@ -11,19 +15,6 @@
   background: #a30046;
 }
 
-
-
-.space-top-md {
-  margin-top: 24px;
-}
-
-.space-top-lg {
-  margin-top: 36px;
-}
-
-.space-top-xl {
-  margin-top: 48px;
-}
 
 .space-bot-0 {
   margin-bottom: 0;
