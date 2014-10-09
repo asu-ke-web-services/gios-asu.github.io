@@ -83,6 +83,9 @@
   color: #ededed;
   background-color: black;
 }
+.navbar-ws .open > .dropdown-menu {
+  border-color: black;
+}
 
 .sidebar-nav {
   border-top-color: #a30046;
@@ -718,13 +721,4 @@ input[type="checkbox"].disabled + .outer-wrap > .fa-check {
   width: 100%;
   height: 225px;
   background: transparent;
-}
-
-.panel.explore-programs h3 {
-  font-size: 30px;
-}
-
-.panel.explore-programs p {
-  font-size: 14px;
-  line-height: 20px;
 }
