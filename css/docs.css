@@ -2,6 +2,15 @@
   background-image: url(../img/img-hero-default.jpg) !important;
 }
 
+.hero-bg-img {
+  /* asu red */
+  background: #a30046;
+}
+
+.inline {
+  display:inline-block;
+}
+
 .border-thick {
   border: 1px solid black !important;
 }
@@ -10,10 +19,7 @@
   border: 1px dotted red !important;
 }
 
-.hero-bg-img {
-  /* asu red */
-  background: #a30046;
-}
+
 
 
 .space-bot-0 {
