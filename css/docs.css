@@ -1,3 +1,8 @@
 .hero-bg-img.hero-action-call {
   background-image: url(../img/img-hero-default.jpg) !important;
 }
+
+.hero-action-call {
+  /* asu red */
+  background: #a30046;
+}
