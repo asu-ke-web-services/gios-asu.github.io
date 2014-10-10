@@ -80,13 +80,16 @@ $(document).ready(function() {
   });
 
   // Sticky sidebar nav
-  var affixed = $('#sidebarNav');
-  affixed.affix({
-    offset: {
-      top: affixed.offset().top,
-      bottom: $('.footer').outerHeight(true) + 94
-    }
+  $('#sidebarNav').each(function (i, e) {
+    $this = $(this);
+    $this.affix({
+      offset: {
+        top: $this.offset().top,
+        bottom: $('.footer').outerHeight(true) + 94
+      }
+    });
   });
+
 
   // Check window size on loading to remove collapsable footer nav class on large screens
   if ($(window).innerWidth() >= 768) {
