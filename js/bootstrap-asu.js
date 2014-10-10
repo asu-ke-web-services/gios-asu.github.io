@@ -80,7 +80,7 @@ $(document).ready(function() {
   });
 
   // Sticky sidebar nav
-  $('#sidebarNav').each(function (i, e) {
+  var affixed = $('#sidebarNav').each(function (i, e) {
     $this = $(this);
     $this.affix({
       offset: {
@@ -89,6 +89,41 @@ $(document).ready(function() {
       }
     });
   });
+
+    // Fix the pushed column affix bug in safari, applies to sticky sidebar
+    // https://github.com/twbs/bootstrap/issues/12126
+    // Check if we are in safari
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+      var explicitlySetAffixPosition = function() {
+        if ($(window).innerWidth() >= 992) {
+          affixed.css('left',affixed.offset().left+'px');
+        }
+      };
+      // Before the element becomes affixed, add left CSS that is equal
+      // to the distance of the element from the left of the screen
+      affixed.on('affix.bs.affix',function(){
+        explicitlySetAffixPosition();
+      });
+      // Remove left position when affix-top class is applied
+      affixed.on('affix-top.bs.affix',function(){
+        affixed.css('left','auto');
+      });
+      // On resize of window, un-affix affixed widget to measure where it should be located,
+      // set the left CSS accordingly, re-affix it
+      // Keep all window resize scripts within the throttling function
+      $(window).smartresize(function() {
+        if (affixed.hasClass('affix')) {
+          affixed.removeClass('affix');
+          affixed.css('left','auto');
+          explicitlySetAffixPosition();
+          affixed.addClass('affix');
+        }
+      });
+      // Now we have to remove the left positioning to get affix-bottom to work properly
+      affixed.on('affix-bottom.bs.affix',function(){
+        affixed.css('left','auto');
+      });
+    }
 
 
   // Check window size on loading to remove collapsable footer nav class on large screens
