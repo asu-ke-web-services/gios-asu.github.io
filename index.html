@@ -1,108 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-US" class="no-js">
-  <head>
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--
-  Prevent this staging site from showing up in search results. Don't
-  use this meta tag in the production site.
--->
-<meta name="robots" content="noindex,nofollow">
-
-<title>ASU Web Standards</title>
-
-<base href="//gios-asu.github.io/" />
-<!-- CSS -->
-<!--
-  The asu-nav.css file is only here to include the ASU global
-  navigation in our deployed preview site. This stylesheet
-  doesn't need to be included in the final Drupal theme, as
-  ASU includes it themselves across all sites.
--->
-<link href="./css/asu-nav.css" rel="stylesheet">
-
-<link href='//fonts.googleapis.com/css?family=Roboto:900,400,300,700,500' rel='stylesheet' type='text/css'>
-
-<!-- The main app css file -->
-<link href="./css/bootstrap.css" rel="stylesheet">
-<link href="./css/bootstrap-asu.css" rel="stylesheet">
-<link href="./css/bootstrap-asu-theme-base.css" rel="stylesheet">
-<link href="./css/docs.css" rel="stylesheet">
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-<!-- modernizr to help with some feature detection -->
-<script src="./js/modernizr-2.8.3.custom.js"></script>
-
-
-  </head>
-  <body>
-<a class="sr-only" href="#content">Skip to main content</a>
-
-<!-- ASU Global Navigation -->
-<header id="asu_header" role="banner">
-  <div id="block-asu-brand-asu-brand-header" class="block block-asu-brand">
-    <div class="content container">
-      <div id="asu_hdr" class="asu_hdr_white chrome">
-       <div id="asu_mobile_hdr">
-         <div id="asu_logo">
-           <a target="_top" href="//www.asu.edu/" title="Arizona State University">
-             <img src="//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" style="margin-top:11px" title="Arizona State University">
-           </a>
-         </div><!-- /#asu_logo  -->
-         <img src="//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" id="asu_print_logo">
-         <div id="asu_school_name">Web Standards</div>
-         <div id="asu_mobile_button" class="asushow"><a href="javascript:toggleASU();">Menu</a></div>
-        </div>
-      </div><!-- /#asu_hdr -->
-      <div style="clear:both;"></div>
-    </div><!-- /.content -->
-  </div><!-- /#block-asu-brand-asu-brand-header -->
-</header>
-
-<!-- Web Standards Global Navigation -->
-<nav class="navbar navbar-ws" role="navigation">
-  <div class="container">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ws">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./">Web Standards</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar-ws">
-      <ul class="nav navbar-nav">
-        <li><a href="./" title="Home"><span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span></a></li>
-        <li><a href="/getting-started.html">Getting started</a></li>
-        <li><a href="/css.html">CSS</a></li>
-        <li><a href="/components.html">Components</a></li>
-        <li><a href="/javascript.html">JavaScript</a></li>
-        <li><a href="/examples/">Examples</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
-</nav>
-
-<!-- Page content of course! -->
+---
+layout: default
+---
 
 <div class="hero hero-bg-img hero-action-call">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>The new Web Standards</h2>
-        <p>A custom suite of Bootstrap addons</p>
-        <a class="btn btn-primary btn-lg" type="button" href="https://github.com/gios-asu/ASU-Bootstrap-Addon">Download</a>
+        <h2>The ASU Web Standards</h2>
+        <p>A custom suite of Bootstrap Addons and Wordpress Themes</p>
+        <a class="btn btn-primary btn-lg" type="button" href="https://github.com/gios-asu/ASU-Bootstrap-Addon">Bootstrap Addon Download</a>
+        <a class="btn btn-primary btn-lg" type="button" href="https://github.com/gios-asu/ASU-Bootstrap-Addon">Wordpress Theme Download</a>
       </div>
     </div><!-- /.row -->
   </div><!-- /.container -->
@@ -112,9 +19,9 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-7 col-lg-8">
-        <h2>Welcome to the ASU Web Standards Bootstrap Project</h2>
+        <h2>Welcome to the ASU Web Standards</h2>
         <p>The new web standards that are being rolled out to the schools at ASU are built upon responsive design, common widgets and themes, and Twitter's Bootstrap.</p>
-        <p>This Bootstrap project is a complete addon to Bootstrap.  Everything available in Twitter's Bootstrap is also available when using this addon.  Checkout the <a href="http://getbootstrap.com/" title="Bootstrap website" target="_blank">Bootstrap website</a> for more details.
+        <p>The ASU Web Standards Addon is used in conjunction with Bootstrap.  Everything available in Twitter's Bootstrap is also available when using this addon.  Checkout the <a href="http://getbootstrap.com/" title="Bootstrap website" target="_blank">Bootstrap website</a> for more details on what default features are available.
       </div>
       <div class="col-sm-6 col-md-5 col-lg-4">
         <div class="panel explore-programs">
@@ -128,64 +35,3 @@
     </div><!-- /.row -->
   </div><!-- /.container -->
 </div>
-
-
-<!-- Begin Footer -->
-
-<div class="footer">
-
-  <div class="big-foot">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12 space-bot-md">
-          <h1>ASU Web Standards Bootstrap</h1>
-
-          <ul class="social-media">
-            <li><a href="#" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="Twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="Google+"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            <li><a href="#" title="YouTube"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-3 space-bot-md">
-          <h2 data-toggle="collapse" data-target="#github">Open Source</h2>
-          <ul class="big-foot-nav collapse" id="people-menu">
-            <li><a class="" href="https://github.com/gios-asu/ASU-Bootstrap-Addon">ASU Bootstrap GitHub</a></li>
-            <li><a class="" href="https://github.com/gios-asu/gios-asu.github.io">This Website's GitHub</a></li>
-          </ul>
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </div><!-- /.big-foot -->
-
-  <div class="little-foot">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="little-foot-nav">
-            <li><a class="" href="#">Copyright &amp; Trademark</a></li>
-            <li><a class="" href="#">Accessibility</a></li>
-            <li><a class="" href="#">Privacy</a></li>
-            <li><a class="" href="#">Emergency</a></li>
-            <li><a class="" href="#">Contact ASU</a></li>
-          </ul>
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </div><!-- /.little-foot -->
-
-</div><!-- /.footer -->
-
-<!-- End Footer -->
-
-
-  <!-- JS Only -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="./js/jquery-1.11.1.min.js"></script>
-  <script src="./js/smoothscroll.min.js"></script>
-  <script src="./js/bootstrap.js"></script><!-- bootstrap files can also be loaded separately -->
-  <script src="./js/docs.js"></script>
-
-  </body>
-</html>
