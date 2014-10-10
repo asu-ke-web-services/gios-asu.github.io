@@ -20,6 +20,15 @@
 }
 
 
+/*!
+ * Bootstrap Docs (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see http://creativecommons.org/licenses/by/3.0/.
+ *
+/*
+ * BEGIN CSS code from Bootstrap
+ */
 .bs-example {
   position: relative;
   padding: 45px 15px 15px;
@@ -68,3 +77,19 @@
     border-bottom-left-radius: 4px;
   }
 }
+
+.bs-example:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Example";
+}
+
+/*
+ * END CSS code from Bootstrap
+ */
