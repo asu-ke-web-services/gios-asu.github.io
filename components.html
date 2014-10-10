@@ -28,9 +28,12 @@ title: Components
       <div class="bs-docs-section">
         <h2 id="hero">Hero</h2>
 
+        <p>
+          Hero units are made to callout specific content.  They are very similar to <a href="#content-call-outs">content call-outs</a>.
+        </p>
         <div class="bs-example">
           <div class="hero">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12">
                   <h2>A top university designed for you</h2>
@@ -47,15 +50,49 @@ title: Components
 &lt;/div&gt;</code></pre>
         </div>
 
-        <h2 id="megamenu">Megamenu</h2>
+        <h2 id="image-heros">Image Heros</h2>
 
-        <h2 id="mega-footer">Megafooter + Social Media + Custom Logo</h2>
+        <p>
+          Hero units can also have background images</a>.
+        </p>
+        <div class="bs-example">
+          <div class="hero hero-bg-img hero-action-call">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>A top university designed for you</h2>
+                  <p>Become a master learner—one who is able to thrive in tomorrow's dynamic work environment—at one of the world's most innovative universities today.</p>
+                  <button class="btn btn-primary" type="button">See more rankings</button>
+                </div>
+              </div><!-- /.row -->
+            </div><!-- /.container -->
+          </div>
+        </div>
+        <div class="highlight">
+          <pre class="prettyprint lang-html"><code>&lt;div class=&quot;hero hero-bg-img hero-action-call&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <p>
+          Additional CSS can be provided to change the background image
+        </p>
+
+        <pre class="prettyprint lang-css"><code>.hero-bg-img.hero-action-call {
+  background-image: url(../img/hero-background-1.jpg);
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hero-background-1.jpg', sizingMethod='scale')";
+}</code></pre>
 
         <h2 id="content-call-outs">Content call-outs</h2>
 
+        <p>
+          Content Call outs are darker versions of hero units.  These should not be placed near the top of the navigation since they are similar colors in the default theme.
+        </p>
+
         <div class="bs-example">
           <div class="hero hero-text-only hero-text-only-dark">
-            <div class="container">
+            <div class="container-fluid">
               <div class="row">
                 <div class="col-md-12">
                   <h2>A top university designed for you</h2>
@@ -71,6 +108,10 @@ title: Components
   ...
 &lt;/div&gt;</code></pre>
         </div>
+
+        <h2 id="megamenu">Megamenu</h2>
+
+        <h2 id="mega-footer">Megafooter + Social Media + Custom Logo</h2>
 
         <h2 id="header-mobile">Header + Mobile Menu</h2>
 
@@ -116,9 +157,10 @@ title: Components
         <div class="list-group">
           <a class="list-group-item" data-scroll="" href="#overview">Overview</a>
           <a class="list-group-item" data-scroll="" href="#hero">Hero</a>
+          <a class="list-group-item" data-scroll="" href="#image-heros">Image Heros</a>
+          <a class="list-group-item" data-scroll="" href="#content-call-outs">Content call-outs</a>
           <a class="list-group-item" data-scroll="" href="#megamenu">Megamenu</a>
           <a class="list-group-item" data-scroll="" href="#mega-footer">Megafooter + Social Media + Custom Logo</a>
-          <a class="list-group-item" data-scroll="" href="#content-call-outs">Content call-outs</a>
           <a class="list-group-item" data-scroll="" href="#header-mobile">Header + Mobile Menu</a>
           <a class="list-group-item" data-scroll="" href="#profiles">Profiles</a>
           <a class="list-group-item" data-scroll="" href="#visit-campus">Visit Campus</a>
