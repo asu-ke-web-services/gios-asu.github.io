@@ -1,0 +1,5 @@
+- Favicon
+- Include lightning touch
+- finish up components docs
+- create a readable version of do's and dont's in the new web standards
+- write up "migrating wordpress"
