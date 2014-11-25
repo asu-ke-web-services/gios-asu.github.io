@@ -23,6 +23,11 @@ title: Wordpress Migration
         <h2>Authentication</h2>
         <p>It is highly recommended to use CAS authentication for all wordpress instalations. This prevents allot of attacks and other exploits. One popular plugin for doing CAS authentication is <a href="https://wordpress.org/plugins/cas-maestro/" target="_blank">CAS Maestro</a>. Configuration is very simple, ASU's CAS server is at weblogin.asu.edu.</p>
 
+         <h1 id="githubupdater">Enabling auto updates from Github</h1>
+         <p>
+         We recommend using the <a href="https://github.com/afragen/github-updater">github-updater</a> plugin, despite it not being sanctioned by the wordpress.org repository standards (<a href="https://github.com/afragen/github-updater/issues/34">read why</a>). This plugin will integrate into wordpress's auto updating hooks and poll github for new tagged releases for themes and plugins.
+         </p>
+         
          <h1 id="theming" class="page-header">Child Theming</h1>
          <p><a class="btn btn-primary btn-lg" role="button" href="http://codex.wordpress.org/Child_Themes" target="_blank">Read more about Child Theming</a></p>
 
@@ -36,6 +41,7 @@ title: Wordpress Migration
         <!-- List Group, linked items -->
         <div class="list-group">
           <a class="list-group-item" data-scroll="" href="#background">Background</a>
+          <a class="list-group-item" data-scroll="" href="#githubupdater">Updates from Github</a>
           <a class="list-group-item" data-scroll="" href="#theming">Child Theming</a>
         </div>
       </div>
