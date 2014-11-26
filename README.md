@@ -1,6 +1,8 @@
 gios-asu.github.io
 ==================
 
+[![Stories in Ready](https://badge.waffle.io/gios-asu/gios-asu.github.io.svg)](http://waffle.io/gios-asu/gios-asu.github.io)
+
 https://gios-asu.github.io/
 
 Web Standards documentation for the Bootstrap addon, Wordpress theme, and WebSpark distribution.
