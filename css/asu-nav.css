@@ -38,6 +38,10 @@
   color: #2a2a2a;
 }
 
+#asu_school_name .department {
+  color: #4f5557;
+}
+
 /* Turn off ASU Global nav items for demonstration */
 @media (max-width: 991px) {
   #asu_mobile_button {
