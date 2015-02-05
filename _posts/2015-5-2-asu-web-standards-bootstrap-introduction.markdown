@@ -13,6 +13,7 @@ The [ASU Web Standards Bootstrap Github repository](https://github.com/gios-asu/
 
 The repository contains CSS, JavaScript, and font files that you can use as a foundation for your website, in conjunction with Twitter Bootstrap and jQuery. 
 ~~~
+
 ## Dependencies
 
 The following dependencies are required for the Web Standards to work correctly on your website:
@@ -26,6 +27,7 @@ The following dependencies are required for the Web Standards to work correctly 
 
 If each webpage on your website includes the above CSS and JavaScript plugins, then you are ready to include the web standards in your website!
 ~~~
+
 ## Installing the Web Standards
 
 You can use one of the following ways to use this repo:
@@ -53,8 +55,9 @@ Add the following to the end of your `<body>` before the closing `</body>` tag, 
 Please remember to include all of the [dependencies](#dependencies).  Include all 3rd party stylesheets and scripts BEFORE including the stylesheets and scripts provided in this repo.
 
 For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
+~~~
 
-# Details
+## Details
 
 This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).  Bootstrap natively provides Glyphicons, which means both can be used in tandiem.
 
