@@ -2,7 +2,6 @@
 layout: default
 title: GIOS Public Documentation
 description: "The public facing documentation for GIOS and GIOS projects"
-tags: [documentation, docs, gios, sos]
 image:
   feature: plains.jpg
   credit: Crucifix Jean-Luc @ Unsplash
@@ -12,57 +11,32 @@ image:
 <div class="gray-back">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-7 col-lg-8">
-        <h2>Welcome to the public facing documentation for GIOS and the GIOS projects</h2>
-        <p>This site is intended to be a guide for the new ASU Webstandards Bootstrap implementation and software projects that use the webstandards boostrap theme.</p>
-
-        <p>The new web standards that are being rolled out to the schools at ASU are built upon responsive design, common widgets and themes, and Twitter's Bootstrap.</p>
-
-
-        <p>The ASU Web Standards Addon is used in conjunction with Bootstrap.  Everything available in Twitter's Bootstrap is also available when using this addon.  Checkout the <a href="http://getbootstrap.com/" title="Bootstrap website" target="_blank">Bootstrap website</a> for more details on what default features are available.</p>
-
-      </div>
-      <div class="col-sm-6 col-md-5 col-lg-4">
-        <div class="panel explore-programs">
-          <div class="panel-body">
-            <h3>Explore What's New</h3>
-            <a class="btn btn-blue btn-block" href="./getting-started.html">Getting Started Guide</a>
-
-            <a class="btn btn-blue btn-block" href="./css.html">CSS</a>
-            <a class="btn btn-blue btn-block" href="./components.html">Components</a>
-          </div>
-        </div>
-      </div>
+      <h2>Welcome!</h2>
+      <p>This is the public facing documentation for GIOS and the GIOS projects</p>
+      <p>TODO text</p>
     </div><!-- /.row -->
   </div><!-- /.container -->
 </div>
 <div class="container">
-  <div class="row space-top-xl space-bot-xl">
-    <div class="col-xs-12">
-      <h2 class="text-center">Discover how to use the Wordpress version of the Web Standards</h2>
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
 
-      <p class="text-center">The ASU Web Standards Wordpress Theme is built on the ASU Web Standards Bootstrap code.  It provides an easy to use way of implementing the ASU Web Standards on a Wordpress installation.</p>
-    </div>
-    <div class="col-sm-6 col-md-4 space-bot-md">
-      <h3><a href="./getting-started.html">Getting Started</a></h3>
-      <p>Learn what the Web Standards are and start using them in your website and Wordpress installations.</p>
-      <p>
-        <a class="btn btn-blue btn-block btn-lg" href="./getting-started.html">Learn More</a>
-      </p>
-    </div>
-    <div class="col-sm-6 col-md-4 space-bot-md">
-      <h3><a href="./css.html">CSS</a></h3>
-      <p>Learn how the Web Standards style your site and what CSS selectors are available.</p>
-      <p>
-        <a class="btn btn-blue btn-block btn-lg" href="./css.html">Learn More</a>
-      </p>
-    </div>
-    <div class="col-sm-6 col-md-4 space-bot-md">
-      <h3><a href="./components.html">Components</a></h3>
-      <p>Learn what new components the Web Standards allow you to use in your Wordpress installation!</p>
-      <p>
-        <a class="btn btn-blue btn-block btn-lg" href="./components.html">Learn More</a>
-      </p>
-    </div>
-  </div>
+<ul class="entry-meta inline-list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+    <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
+  {% endunless %}{% endfor %}
+</ul>
+
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+  {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  <article>
+  <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
+    <ul>
+    {% for post in site.tags[this_word] %}{% if post.title != null %}
+      <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endif %}{% endfor %}
+    </ul>
+  </article><!-- /.hentry -->
+{% endunless %}{% endfor %}
 </div><!-- /.container -->

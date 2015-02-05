@@ -98,5 +98,20 @@ h1, h2 {
 }
 
 /*
+ * Image Credits
+ */
+.hero {
+  position: relative;
+}
+
+.image-credit {
+  bottom: 0;
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+
+/*
  * END CSS code from Bootstrap
  */

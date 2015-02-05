@@ -1,0 +1,19 @@
+{% include header.html %}
+{% assign contents = content | split: '~~~' %}
+
+{% for c in contents %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if thecycle == 'odd' %}
+  <div class="gray-back">
+  {% endif %}
+  <div class="container">
+    <div class="row">
+      {{ c }}
+    </div>
+  </div>
+  {% if thecycle == 'odd' %}
+  </div>
+  {% endif %}
+{% endfor %}
+
+{% include footer.html %}
