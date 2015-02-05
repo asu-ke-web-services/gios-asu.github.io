@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction
+title: Getting Started
 description: "An introduction to what the ASU Web Standards are and how to use the ASU Web Standards Bootstap Repo"
 tags: ["ASU Web Standards Bootstrap"]
 image:
