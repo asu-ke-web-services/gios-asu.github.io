@@ -6,3 +6,5 @@ defaults:
       layout: "default"
 
 markdown: redcarpet
+kramdown:
+  input: GFM
