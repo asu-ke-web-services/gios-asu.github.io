@@ -11,7 +11,7 @@ image:
 
 In addition to all of the CSS classes that [Bootstrap](http://getbootstrap.com/css) offers, the ASU Web Standards Bootstrap repo adds a few new CSS classes that you can use in your project.
 
-===
+<!--break-->
 
 ### Padding and Margin Helpers
 
@@ -43,7 +43,7 @@ pad-zero
 mr-20
 ```
 
-===
+<!--break-->
 
 ### TODO
 

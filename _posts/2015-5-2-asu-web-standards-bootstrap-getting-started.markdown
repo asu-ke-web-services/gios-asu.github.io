@@ -12,7 +12,8 @@ image:
 The [ASU Web Standards Bootstrap Github repository](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap) is a barebones, platform independent implementation of the new web standards outlined by the [ASU Enterprise Marketing HUB](https://hub.asu.edu/).  It's main purpose is to provide styling for websites that are not in Drupal or WordPress.
 
 The repository contains CSS, JavaScript, and font files that you can use as a foundation for your website, in conjunction with Twitter Bootstrap and jQuery. 
-===
+
+<!--break-->
 
 ## Dependencies
 
@@ -26,7 +27,8 @@ The following dependencies are required for the Web Standards to work correctly 
 - [ASU Header](https://drupal.asu.edu/build/asu-header-footer-version-40)
 
 If each webpage on your website includes the above CSS and JavaScript plugins, then you are ready to include the web standards in your website!
-===
+
+<!--break-->
 
 ## Installing the Web Standards
 
@@ -55,7 +57,8 @@ Add the following to the end of your `<body>` before the closing `</body>` tag, 
 Please remember to include all of the [dependencies](#dependencies).  Include all 3rd party stylesheets and scripts BEFORE including the stylesheets and scripts provided in this repo.
 
 For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
-===
+
+<!--break-->
 
 ## Details
 
