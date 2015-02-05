@@ -24,18 +24,20 @@ The navigation provided in the ASU Web Standards is an extension of the navigati
     "{{school_url}}">{{school_name}}</a></h1>
   </div>
 </div>
-<div class="container">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
-    "#ws-navbar-collapse-1"><span class="sr-only">Toggle navigation</span></button>
-    <a class="navbar-brand" href="{{school_url}}">{{school_name}}</a>
+<nav class="navbar navbar-ws" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
+      "#ws-navbar-collapse-1"><span class="sr-only">Toggle navigation</span></button>
+      <a class="navbar-brand" href="{{school_url}}">{{school_name}}</a>
+    </div>
+    <div id="ws-navbar-collapse-1" class="collapse navbar-collapse">
+      <ul id="menu-header-menu" class="nav navbar-nav">
+        {{navigation_dropdowns}}
+      </ul>
+    </div>
   </div>
-  <div id="ws-navbar-collapse-1" class="collapse navbar-collapse">
-    <ul id="menu-header-menu" class="nav navbar-nav">
-      {{navigation_dropdowns}}
-    </ul>
-  </div>
-</div>
+</nav>
 ```
 
 The navigation dropdowns can by any combination of the following types:
