@@ -56,6 +56,10 @@ TODO
 
 <!--break-->
 
+## Mega Footer
+
+<!--break-->
+
 ## Heros
 
 Hero units are made to callout specific content.
@@ -135,7 +139,127 @@ Calendar dates are widgets that you can add to your application in order to allo
 
 ## Profile
 
-TODO
+<div class="bs-example">
+  <!-- Example profile -->
+  <div class="profile">
+    <div class="profile-heading">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="profile-pic">
+            <img src="http://placehold.it/266x266" alt="Jason Striker" class="img-responsive space-bot-md">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+          <p>
+            <strong>Jason Striker</strong><br>
+            Manager Communications (UTO)<br>
+            UTO Planning and Programs<br>
+            University Staff
+          </p>
+          <p>
+            <a href="#">Jason.Striker@asu.edu</a><br>
+            <a href="#">(480) 727-5426</a><br>
+            Mail Code: 0101
+          </p>
+          <p>
+            Student Information<br>
+            Graduate Student<br>
+            Communication Studies<br>
+            New Interdis Arts &amp; Sciences
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+          <ul class="profile-actions">
+            <li><a href="#">Print Profile</a></li>
+            <li><a href="#">Update Profile</a></li>
+            <li><a href="#">Report Abuse</a></li>
+          </ul>
+        </div>
+      </div><!-- /.row -->
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#bio" data-toggle="tab">Bio</a></li>
+      <li><a href="#research" data-toggle="tab">Research Interests</a></li>
+      <li><a href="#vitae" data-toggle="tab">Curriculum Vitae</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="bio">
+      <p>Jason Striker is an advocate and educator who facilitates intercultural, interpersonal and meaningful discourse. His specialization in digital communication, social media and online community building fosters the know-how and know-why, to support accessibility and accountability — for all — within online mediums. He strives to teach how to communicate effectively and judiciously, digitally and face to face.</p>
+      <p>Jason serves the ASU Community as the communication manager for the University Technology Office; as a teaching assistant for COM 324; is the Vice President of Professional Development for the Graduate Professional Student Association, volunteers nationally with the National Assocation of Graduate &amp; Professional Students (NAGPS) as their Director of Relations, and serves on the Committee for Campus Inclusion (CCI).</p>
+      </div>
+      <div class="tab-pane fade" id="research">
+        <h3>Profile example tab</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu felis, blandit a lorem nec; adipiscing pretium est. </p>
+      </div>
+      <div class="tab-pane fade" id="vitae">
+        <h3>Profile example tab</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu felis, blandit a lorem nec; adipiscing pretium est.</p>
+      </div>
+    </div><!-- /.tab-content -->
+  </div>
+</div>
+
+```html
+<!-- Example profile -->
+<div class="profile">
+  <div class="profile-heading">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="profile-pic">
+          <img src="http://placehold.it/266x266" alt="Jason Striker" class="img-responsive space-bot-md">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+        <p>
+          <strong>Jason Striker</strong><br>
+          Manager Communications (UTO)<br>
+          UTO Planning and Programs<br>
+          University Staff
+        </p>
+        <p>
+          <a href="#">Jason.Striker@asu.edu</a><br>
+          <a href="#">(480) 727-5426</a><br>
+          Mail Code: 0101
+        </p>
+        <p>
+          Student Information<br>
+          Graduate Student<br>
+          Communication Studies<br>
+          New Interdis Arts &amp; Sciences
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+        <ul class="profile-actions">
+          <li><a href="#">Print Profile</a></li>
+          <li><a href="#">Update Profile</a></li>
+          <li><a href="#">Report Abuse</a></li>
+        </ul>
+      </div>
+    </div><!-- /.row -->
+  </div>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#bio" data-toggle="tab">Bio</a></li>
+    <li><a href="#research" data-toggle="tab">Research Interests</a></li>
+    <li><a href="#vitae" data-toggle="tab">Curriculum Vitae</a></li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="bio">
+    <p>Jason Striker is an advocate and educator who facilitates intercultural, interpersonal and meaningful discourse. His specialization in digital communication, social media and online community building fosters the know-how and know-why, to support accessibility and accountability — for all — within online mediums. He strives to teach how to communicate effectively and judiciously, digitally and face to face.</p>
+    <p>Jason serves the ASU Community as the communication manager for the University Technology Office; as a teaching assistant for COM 324; is the Vice President of Professional Development for the Graduate Professional Student Association, volunteers nationally with the National Assocation of Graduate &amp; Professional Students (NAGPS) as their Director of Relations, and serves on the Committee for Campus Inclusion (CCI).</p>
+    </div>
+    <div class="tab-pane fade" id="research">
+      <h3>Profile example tab</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu felis, blandit a lorem nec; adipiscing pretium est. </p>
+    </div>
+    <div class="tab-pane fade" id="vitae">
+      <h3>Profile example tab</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu felis, blandit a lorem nec; adipiscing pretium est.</p>
+    </div>
+  </div><!-- /.tab-content -->
+</div>
+```
 
 <!--break-->
 
