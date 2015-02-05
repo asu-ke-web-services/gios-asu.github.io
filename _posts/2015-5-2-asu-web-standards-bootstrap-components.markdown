@@ -23,6 +23,7 @@ They normally follow headings and are one sentence long.
 ```html
 <p class="lead">This is an example lead sentence</p>
 ```
+
 ~~~
 
 ### Calendar Dates
@@ -46,16 +47,17 @@ Calendar dates are widgets that you can add to your application in order to allo
   </time>
 </div>
 ```
+
 ~~~
 
 ### Profile
 
 TODO
+
 ~~~
 
 ### Visit Campus
 
 TODO
-~~~
 
 
