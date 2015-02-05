@@ -20,8 +20,8 @@ The navigation provided in the ASU Web Standards is an extension of the navigati
 ```html
 <div id="site-name-desktop" class="section site-name-desktop">
   <div class="container">
-    <h1 class="site-title" id="asu_school_name"><span class="first-word"><a href="{{organization_url}}">{{organization_name}}</a></span>&nbsp;|&nbsp; <a href=
-    "{{school_url}}">{{school_name}}</a></h1>
+    <h1 class="site-title" id="asu_school_name"><span class="first-word"><a href="__organization_url__">__organization_name__</a></span>&nbsp;|&nbsp; <a href=
+    "__school_url__">__school_name__</a></h1>
   </div>
 </div>
 <nav class="navbar navbar-ws" role="navigation">
@@ -29,11 +29,11 @@ The navigation provided in the ASU Web Standards is an extension of the navigati
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
       "#ws-navbar-collapse-1"><span class="sr-only">Toggle navigation</span></button>
-      <a class="navbar-brand" href="{{school_url}}">{{school_name}}</a>
+      <a class="navbar-brand" href="__school_url__">__school_name__</a>
     </div>
     <div id="ws-navbar-collapse-1" class="collapse navbar-collapse">
       <ul id="menu-header-menu" class="nav navbar-nav">
-        {{navigation_dropdowns}}
+        __navigation_dropdowns__
       </ul>
     </div>
   </div>
@@ -58,7 +58,35 @@ TODO
 
 ## Heros
 
-TODO
+Hero units are made to callout specific content.
+
+<div class="bs-example">
+  <div class="hero hero-bg-img hero-action-call" style="background-image: url({{ site.url }}/images/{{ page.image.feature }});">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>A top university designed for you</h2>
+          <p>Become a master learner—one who is able to thrive in tomorrow's dynamic work environment—at one of the world's most innovative universities today.</p>
+          <button class="btn btn-primary" type="button">See more rankings</button>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+</div>
+
+```html
+<div class="hero hero-bg-img hero-action-call" style="background-image: url(image_url);">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>A top university designed for you</h2>
+        <p>Become a master learner—one who is able to thrive in tomorrow's dynamic work environment—at one of the world's most innovative universities today.</p>
+        <button class="btn btn-primary" type="button">See more rankings</button>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+```
 
 <!--break-->
 
