@@ -1,5 +1,5 @@
 {% include header.html %}
-{% assign contents = content | split: '~~~' %}
+{% assign contents = content | split: '===' %}
 
 {% for c in contents %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}

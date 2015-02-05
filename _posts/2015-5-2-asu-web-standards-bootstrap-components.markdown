@@ -10,7 +10,7 @@ image:
 ---
 
 In addition to all of the components that [Bootstrap](http://getbootstrap.com/) offers, the ASU Web Standards Bootstrap repo adds a few new components that you can use in your project.
-~~~
+===
 
 ### Lead Paragraphs
 
@@ -23,9 +23,8 @@ They normally follow headings and are one sentence long.
 ```html
 <p class="lead">This is an example lead sentence</p>
 ```
-&nbsp;
 
-~~~
+===
 
 ### Calendar Dates
 
@@ -48,15 +47,14 @@ Calendar dates are widgets that you can add to your application in order to allo
   </time>
 </div>
 ```
-&nbsp;
 
-~~~
+===
 
 ### Profile
 
 TODO
 
-~~~
+===
 
 ### Visit Campus
 
