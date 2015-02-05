@@ -264,7 +264,13 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h2>{{ page.title }}</h2>
+                <h2>
+                  {% if page.tags.size > 0 %}
+                    {{ page.tags[0] }}:
+                  {% endif %}
+                  {{ page.title }}
+                  
+                </h2>
                 <p>{{ page.description }}</p>
               </div>
             </div><!-- /.row -->

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASU Web Standards Bootstrap Components
+title: Components
 description: "Base components for building your website"
 tags: ["ASU Web Standards Bootstrap"]
 image:
