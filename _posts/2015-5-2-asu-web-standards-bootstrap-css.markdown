@@ -13,7 +13,7 @@ In addition to all of the CSS classes that [Bootstrap](http://getbootstrap.com/c
 
 <!--break-->
 
-### Padding and Margin Helpers
+## Padding and Margin Helpers
 
 The following CSS styles are available to help you add and remove padding and margins:
 
@@ -45,6 +45,29 @@ mr-20
 
 <!--break-->
 
-### TODO
+## Gray Containers
 
-gray-back
+The repository comes with a CSS rule for creating gray containers, use it like so:
+
+```html
+<div class="gray-back">
+  <div class="container">
+  </div>
+</div>
+```
+
+<!--break-->
+
+## Buttons
+
+Secondary and Gold buttons have been added for your convenience.
+
+<div class="bs-example">
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-gold">Gold</button>
+</div>
+
+```html
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-gold">Gold</button>
+```

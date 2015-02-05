@@ -13,7 +13,7 @@ In addition to all of the components that [Bootstrap](http://getbootstrap.com/) 
 
 <!--break-->
 
-### Navigation
+## Navigation
 
 The navigation provided in the ASU Web Standards is an extension of the navigation menu provided by Bootstrap.  Here is an example of how to put together the HTML for a nav bar:
 
@@ -42,27 +42,35 @@ The navigation provided in the ASU Web Standards is an extension of the navigati
 
 The navigation dropdowns can by any combination of the following types:
 
-#### Single Tab
+### Single Tab
 
 TODO
 
-#### Simple Menu
+### Simple Menu
 
 TODO
 
-#### Mega Menu
+### Mega Menu
 
 TODO
 
 <!--break-->
 
-### Lead Paragraphs
+## Heros
+
+TODO
+
+<!--break-->
+
+## Lead Paragraphs
 
 You can add what is known as a `lead paragraph` to your content.  Lead paragraphs pop out and are slightly larger in font than normal paragraphs.
 
 They normally follow headings and are one sentence long.
 
-<p class="lead">This is an example lead sentence</p>
+<div class="bs-example">
+  <p class="lead">This is an example lead sentence</p>
+</div>
 
 ```html
 <p class="lead">This is an example lead sentence</p>
@@ -70,16 +78,18 @@ They normally follow headings and are one sentence long.
 
 <!--break-->
 
-### Calendar Dates
+## Calendar Dates
 
 Calendar dates are widgets that you can add to your application in order to allow users to visually see a date and download it to add the date to a calendar app of their choice.
 
-<div class="calendar-date calendarPopover" data-original-title="" title="">
-  <time datetime="2014-01-01">
-    <span class="weekday">Sun</span>
-    <span class="date">1</span>
-    <span class="month">Jan</span>
-  </time>
+<div class="bs-example">
+  <div class="calendar-date calendarPopover" data-original-title="" title="">
+    <time datetime="2014-01-01">
+      <span class="weekday">Sun</span>
+      <span class="date">1</span>
+      <span class="month">Jan</span>
+    </time>
+  </div>
 </div>
 
 ```html
@@ -94,13 +104,13 @@ Calendar dates are widgets that you can add to your application in order to allo
 
 <!--break-->
 
-### Profile
+## Profile
 
 TODO
 
 <!--break-->
 
-### Visit Campus
+## Visit Campus
 
 TODO
 

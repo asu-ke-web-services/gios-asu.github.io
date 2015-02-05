@@ -11,7 +11,12 @@ image:
 
 The [ASU Web Standards Bootstrap Github repository](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap) is a barebones, platform independent implementation of the new web standards outlined by the [ASU Enterprise Marketing HUB](https://hub.asu.edu/).  It's main purpose is to provide styling for websites that are not in Drupal or WordPress.
 
-The repository contains CSS, JavaScript, and font files that you can use as a foundation for your website, in conjunction with Twitter Bootstrap and jQuery. 
+The repository contains CSS, JavaScript, and font files that you can use as a foundation for your website, in conjunction with Twitter Bootstrap and jQuery.
+
+If you are creating a WordPress website, we recommend using the [Wordpress Theme]({% post_url 2015-5-3-asu-web-standards-wordpress-getting-started %}) to integrate the web standards into your website.
+
+If you are creating a Drupal website, please use [WebSpark](http://webspark.asu.edu/).
+
 
 <!--break-->
 
@@ -68,4 +73,55 @@ This theme uses the Google Font Roboto.  If you do not include Roboto in your we
 
 For more information concerning all of the new components and CSS styles that are introduced in this theme, check out [https://gios-asu.github.io/](https://gios-asu.github.io/).
 
+### Repo Structure
 
+When you download the repository, you will need to following files from the Github Repo:
+
+```bash
+build/
+├── css/
+|   ├── bootstrap-asu.css
+|   └── bootstrap-asu-theme-base.css
+├── js/
+│   ├── bootstrap-asu.js
+└── fonts/
+    ├── fontawesome-webfont.eot
+    ├── fontawesome-webfont.svg
+    ├── fontawesome-webfont.ttf
+    ├── fontawesome-webfont.woff
+    └── FontAwesome.otf
+```
+
+This is the most basic form of the Web Standards.  They are precompiled files for quick drop-in usage of any project that uses Bootstrap.  We provide CSS, JS, and font files for convenience. Fonts from FontAwesome are included.
+
+When integrating the Web Standards into a Bootstrap project, you will get the following directory structure:
+
+```bash
+webroot/
+├── css/
+│   ├── bootstrap.css
+│   ├── <b>bootstrap-asu.css</b>
+│   ├── <b>bootstrap-asu-theme-base.css</b>
+├── js/
+│   ├── jquery.js
+│   ├── bootstrap.js
+│   ├── <b>bootstrap-asu.js</b>
+└── fonts/
+    ├── <b>fontawesome-webfont.eot</b>
+    ├── <b>fontawesome-webfont.svg</b>
+    ├── <b>fontawesome-webfont.ttf</b>
+    ├── <b>fontawesome-webfont.woff</b>
+    └── <b>FontAwesome.otf</b>
+```
+
+<!--break-->
+
+## Theming
+
+Theming is done by creating your own `boostrap-asu-theme-base.css`.  This CSS file controls only the colors that appear on your website.
+
+The SASS files that are used to create a theme base are in `scss/custom`. The `_variable.scss` file contains all of the color codes used to theme an ASU website. 
+
+In order to compile your SASS files into a CSS file, use a SASS processor to compile `bootstrap-asu-theme-base.scss`.  This will create a custom version of `boostrap-asu-theme-base.css` that you can use on your website.
+
+We recommend using [Grunt](http://gruntjs.com/). Please see the [actual repository](https://github.com/gios-asu/ASU-Web-Standards-Bootstrap) for in-depth details for developers.

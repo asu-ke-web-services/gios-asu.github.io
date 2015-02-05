@@ -11,6 +11,9 @@ image:
 
 The [ASU Web Standards Wordpress Github repository](https://github.com/gios-asu/ASU-Web-Standards-Wordpress-Theme) is a WordPress theme that enables the web standards outlined by the [ASU Enterprise Marketing HUB](https://hub.asu.edu/).
 
+<a href="https://github.com/gios-asu/ASU-Wordpress-Web-Standards-Theme" class="btn btn-primary btn-lg" role="button">Download the Wordpress Theme</a>
+
+<!--break-->
 
 ## Dependencies
 
@@ -19,7 +22,9 @@ When using this theme:
 - Make sure this theme lives in the folder: `ASU-Web-Standards-Wordpress-Theme`.
 - This theme uses [RespondJS](https://github.com/scottjehl/Respond) to make media queries work on IE 6-8. If you use a CDN to host CSS files, make sure they do not use `@import` and that they also allow cross domain requests to files.
 
-# Recommended Plugins
+<!--break-->
+
+## Recommended Plugins
 
 The following plugins are recommended to use intandiem with the ASU Web Standards WordPress Theme:
 
