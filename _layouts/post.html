@@ -16,7 +16,6 @@
   {% endif %}
 {% endfor %}
 
-<hr />
 {% assign hasSimilar = '' %}
 {% for post in site.related_posts %}
     {% assign postHasSimilar = false %}
@@ -24,6 +23,7 @@
         {% for thisTag in page.tags %}
             {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                 {% if hasSimilar.size == 0 %}
+                <hr />
                 <h3>Additional Reading</h4>
                 <ul class="nav nav-pills nav-stacked">
                 {% endif %}
