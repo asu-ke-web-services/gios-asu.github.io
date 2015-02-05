@@ -236,9 +236,9 @@
   <div class="">
     <div id="site-name-desktop" class="section site-name-desktop">
       <div class="container">
-        <h1 class="site-title" id="asu_school_name"><span class="first-word">Julie Ann
-        Wrigley Global Institute of Sustainability</span>&nbsp;|&nbsp; <a href=
-        "http://10.210.248.34/wordpress-ms/sos">School of Sustainability</a></h1>
+        <h1 class="site-title" id="asu_school_name"><span class="first-word"><a href="http://sustainability.asu.edu">Julie Ann
+        Wrigley Global Institute of Sustainability</a></span>&nbsp;|&nbsp; <a href=
+        "./">GIOS Public Documentation</a></h1>
       </div>
     </div><!-- Global Navigation -->
 
@@ -246,8 +246,7 @@
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
         "#ws-navbar-collapse-1"><span class="sr-only">Toggle navigation</span></button>
-        <a class="navbar-brand" href="http://10.210.248.34/wordpress-ms/sos">School of
-        Sustainability</a>
+        <a class="navbar-brand" href="http://10.210.248.34/wordpress-ms/sos">GIOS Public Documentation</a>
       </div>
 
       <div id="ws-navbar-collapse-1" class="collapse navbar-collapse">
@@ -259,3 +258,16 @@
   <div id="main-wrapper" class="clearfix">
     <div id="main" class="clearfix">
       <div id="content" class="site-content">
+        {% if page.image.feature %}
+        <div class="hero hero-bg-img hero-action-call" style="background-image: url({{ site.url }}/images/{{ page.image.feature }});">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>{{ page.title }}</h2>
+                <p>{{ page.description }}</p>
+                {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div>
+        {% endif %}
