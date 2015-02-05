@@ -1,45 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-US" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--
-      Prevent this staging site from showing up in search results. Don't
-      use this meta tag in the production site.
-    -->
-    <meta name="robots" content="noindex,nofollow">
-
-    <title>{% if page.html_title %}{{ page.html_title }} • {% endif %}ASU Web Standards | Bootstrap </title>
-
-    <base href="//gios-asu.github.io/" />
-    <!-- CSS -->
-    <!--
-      The asu-nav.css file is only here to include the ASU global
-      navigation in our deployed preview site. This stylesheet
-      doesn't need to be included in the final Drupal theme, as
-      ASU includes it themselves across all sites.
-    -->
-    <link href="./css/asu-nav.css" rel="stylesheet">
-
-    <link href='//fonts.googleapis.com/css?family=Roboto:900,400,300,700,500' rel='stylesheet' type='text/css'>
-
-    <!-- The main app css file -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/bootstrap-asu.css" rel="stylesheet">
-    <link href="./css/bootstrap-asu-theme-base.css" rel="stylesheet">
-    <link href="./css/docs.css" rel="stylesheet">
-    <link href="./css/prettify.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-    <!-- modernizr to help with some feature detection -->
-    <script src="./js/modernizr-2.8.3.custom.js"></script>
-  </head>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.html_title %}{{ page.html_title }} | {% endif %}GIOS Public Documentation </title>
+<base href="//gios-asu.github.io/" />
+<!-- CSS -->
+<link href="./css/asu-nav.css" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto:900,400,300,700,500' rel='stylesheet' type='text/css'>
+<link href="./css/bootstrap.css" rel="stylesheet">
+<link href="./css/bootstrap-asu.css" rel="stylesheet">
+<link href="./css/bootstrap-asu-theme-base.css" rel="stylesheet">
+<link href="./css/docs.css" rel="stylesheet">
+<link href="./css/prettify.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!-- modernizr to help with some feature detection -->
+<script src="./js/modernizr-2.8.3.custom.js"></script>
+</head>
 <body>
   <a class="sr-only" href="#content">Skip to main content</a>
 
@@ -55,8 +36,13 @@
              </a>
            </div><!-- /#asu_logo  -->
            <img src="//www.asu.edu/asuthemes/4.0-rsp.1/images/logos/asu_logo_white.png" alt="Arizona State University" height="32" width="203" id="asu_print_logo">
-           <div id="asu_school_name">
-              ASU Web Standards &nbsp;|&nbsp; <span class="department" style="color: #4f5557;">Bootstrap Add-on</span></div>
+            <div id="site-name-desktop" class="section site-name-desktop">
+              <div class="container">
+                <h1 class="site-title" id="asu_school_name">
+                  <span class="first-word"><a href="http://sustainability.asu.edu">Julie Ann Wrigley Global Institute of Sustainability</a></span>&nbsp;|&nbsp;              <a href="./">GIOS Public Documentation</a>
+                </h1>
+              </div>
+            </div>
            <div id="asu_mobile_button" class="asushow"><a href="javascript:toggleASU();">Menu</a></div>
           </div>
         </div><!-- /#asu_hdr -->
@@ -68,7 +54,6 @@
   <!-- Web Standards Global Navigation -->
   <nav class="navbar navbar-ws" role="navigation">
     <div class="container">
-
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ws">
           <span class="sr-only">Toggle navigation</span>
@@ -76,7 +61,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./">Web Standards</a>
+        <a class="navbar-brand" href="./">GIOS Public Documentation</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
