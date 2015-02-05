@@ -13,6 +13,47 @@ In addition to all of the components that [Bootstrap](http://getbootstrap.com/) 
 
 <!--break-->
 
+### Navigation
+
+The navigation provided in the ASU Web Standards is an extension of the navigation menu provided by Bootstrap.  Here is an example of how to put together the HTML for a nav bar:
+
+```html
+<div id="site-name-desktop" class="section site-name-desktop">
+  <div class="container">
+    <h1 class="site-title" id="asu_school_name"><span class="first-word"><a href="{{organization_url}}">{{organization_name}}</a></span>&nbsp;|&nbsp; <a href=
+    "{{school_url}}">{{school_name}}</a></h1>
+  </div>
+</div>
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=
+    "#ws-navbar-collapse-1"><span class="sr-only">Toggle navigation</span></button>
+    <a class="navbar-brand" href="{{school_url}}">{{school_name}}</a>
+  </div>
+  <div id="ws-navbar-collapse-1" class="collapse navbar-collapse">
+    <ul id="menu-header-menu" class="nav navbar-nav">
+      {{navigation_dropdowns}}
+    </ul>
+  </div>
+</div>
+```
+
+The navigation dropdowns can by any combination of the following types:
+
+#### Single Tab
+
+TODO
+
+#### Simple Menu
+
+TODO
+
+#### Mega Menu
+
+TODO
+
+<!--break-->
+
 ### Lead Paragraphs
 
 You can add what is known as a `lead paragraph` to your content.  Lead paragraphs pop out and are slightly larger in font than normal paragraphs.
