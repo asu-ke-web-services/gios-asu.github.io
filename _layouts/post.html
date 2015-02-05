@@ -24,16 +24,19 @@
             {% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
                 {% if hasSimilar.size == 0 %}
                 <hr />
-                <h3>Additional Reading</h4>
-                <ul class="nav nav-pills nav-stacked">
-                {% endif %}
-                <li class="relatedPost">
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
-                    {% if post.series %}
-                        (Series: {{ post.series }})
-                    {% endif %}
-                    </a>
-                </li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <h3>Additional Reading</h3>
+                      <ul class="nav nav-pills nav-stacked">
+                      {% endif %}
+                      <li class="relatedPost">
+                          <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
+                          {% if post.series %}
+                              (Series: {{ post.series }})
+                          {% endif %}
+                          </a>
+                      </li>
                 {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
                 {% assign postHasSimilar = true %}
             {% endif %}
@@ -41,7 +44,10 @@
     {% endfor %}
 {% endfor %}
 {% if hasSimilar.size > 0 %}
-    </ul>
+      </ul>
+    </div>
+  </div>
+</div>
 {% endif %}
 
 {% include footer.html %}
