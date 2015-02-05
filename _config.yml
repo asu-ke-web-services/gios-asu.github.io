@@ -8,3 +8,4 @@ defaults:
 markdown: redcarpet
 kramdown:
   input: GFM
+pygments: true

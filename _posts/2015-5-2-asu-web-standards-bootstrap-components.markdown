@@ -90,6 +90,7 @@ Calendar dates are widgets that you can add to your application in order to allo
       <span class="month">Jan</span>
     </time>
   </div>
+  <div class="clearfix"></div>
 </div>
 
 ```html
