@@ -4,7 +4,7 @@ title: ASU Web Standards Bootstrap Introduction
 description: "An introduction to what the ASU Web Standards are and how to use the ASU Web Standards Bootstap Repo."
 tags: ["ASU Web Standards Bootstrap"]
 image:
-  feature: empty-track.jpg
+  feature: path.jpg
   credit: Francisco Casero
   creditlink: https://ununsplash.imgix.net/25/empty-track.jpg?q=75&fm=jpg&s=ff243e360ba24d29009695c0dce4e71a
 ---
@@ -64,4 +64,5 @@ This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).  Boo
 This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font.
 
 For more information concerning all of the new components and CSS styles that are introduced in this theme, check out [https://gios-asu.github.io/](https://gios-asu.github.io/).
+
 
