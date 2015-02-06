@@ -59,7 +59,7 @@ Add the following to the end of your `<body>` before the closing `</body>` tag, 
 <script src="./js/bootstrap-asu.min.js"></script>
 ```
 
-Please remember to include all of the [dependencies](#dependencies).  Include all 3rd party stylesheets and scripts BEFORE including the stylesheets and scripts provided in this repo.
+Please remember to include all of the dependencies.  Include all 3rd party stylesheets and scripts BEFORE including the stylesheets and scripts provided in this repo.
 
 For developers or when debugging, consider using the non-minified JavaScript files and adding the `*.map` files to where your `*.css` files are.
 
@@ -71,7 +71,7 @@ This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).  Boo
 
 This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font.
 
-For more information concerning all of the new components and CSS styles that are introduced in this theme, check out [https://gios-asu.github.io/](https://gios-asu.github.io/).
+For more information concerning all of the new components and CSS styles that are introduced in this theme, check out [Components]({% post_url 2015-5-2-asu-web-standards-bootstrap-components %}) and [CSS]({% post_url 2015-5-2-asu-web-standards-bootstrap-css %}).
 
 ### Repo Structure
 
