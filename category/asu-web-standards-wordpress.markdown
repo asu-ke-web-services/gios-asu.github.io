@@ -1,4 +1,4 @@
 ---
 layout: category
-title: ASU Web Standards Wordpress
+title: ASU Web Standards WordPress
 ---
