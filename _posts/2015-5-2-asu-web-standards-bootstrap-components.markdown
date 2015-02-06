@@ -42,13 +42,49 @@ The navigation provided in the ASU Web Standards is an extension of the navigati
 
 The navigation dropdowns can by any combination of the following types:
 
+### Home Tab
+
+The home tab is the first menu navigation item on the menu.
+
+```html
+<li>
+  <a href="./" title="Home">
+    <span class="fa fa-home hidden-xs hidden-sm" aria-hidden="true"></span><span class="hidden-md hidden-lg">Home</span>
+  </a>
+</li>
+```
+
+
 ### Single Tab
 
-TODO
+A single tab on the menu navigation is created with the following markup:
+
+```html
+<li>
+  <a title="__navigation_item_name__" href="__href__">__navigation_item_name__</a>
+</li>
+```
 
 ### Simple Menu
 
-TODO
+A simple menu is a dropdown menu in the navigation and is created with the following markup:
+
+```html
+<li class="dropdown">
+  <a title="__navigation_item_name__" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+    __navigation_item_name__ <span class="caret"></span>
+  </a>
+  <ul role="menu" class="dropdown-menu">
+    <li>
+      <a title="__item_name__" href="__href__">__item_name__</a>
+    </li>
+    <li>
+      <a title="__item_name__" href="__href__">__item_name__</a>
+    </li>
+    <!-- ... -->
+  </ul>
+</li>
+```
 
 ### Mega Menu
 
