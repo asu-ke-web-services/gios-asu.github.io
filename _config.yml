@@ -10,4 +10,4 @@ base_path: "//gios-asu.github.io/"
 kramdown:
   input: GFM
   auto_ids: true
-highlighter: pygment
+highlighter: pygments
