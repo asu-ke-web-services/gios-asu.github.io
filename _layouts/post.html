@@ -1,20 +1,36 @@
 {% include header.html %}
 {% assign contents = content | split: '<!--break-->' %}
+<div class="container space-top-lg">
+  <div class="row">
+    <div class="col-sm-4 col-sm-push-8 hidden-xs">
+      <div class="sidebar-nav affix-top">
+        <!-- <ul class="nav nav-pills nav-stacked">
+          <li role="presentation"><a href="#containers">Containers</a></li>
 
-{% for c in contents %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-  {% if thecycle == 'odd' %}
-  <div class="gray-back pad-top-md pad-bot-lg">
-  {% endif %}
-  <div class="container">
-    <div class="row">
-      {{ c }}
+          <li role="presentation"><a href="#sidebars">Sidebars</a></li>
+        </ul> -->
+      </div>
+    </div>
+    <div class="col-sm-8 col-sm-pull-4">
+      {% for c in contents %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+        <div class="gray-back pad-top-md pad-bot-lg">
+        {% endif %}
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              {{ c }}
+            </div>
+          </div>
+        </div>
+        {% if thecycle == 'odd' %}
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
-  {% if thecycle == 'odd' %}
-  </div>
-  {% endif %}
-{% endfor %}
+</div>
 
 {% assign hasSimilar = '' %}
 {% for post in site.related_posts %}

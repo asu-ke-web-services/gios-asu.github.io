@@ -1,6 +1,9 @@
-/*.hero-bg-img.hero-action-call {
-  background-image: url(../img/img-hero-default.jpg) !important;
-}*/
+/* TODO migrate this to the base theme */
+body {
+  height: 100%;
+  position: relative;
+}
+/* end TODO */
 
 .hero-bg-img {
   /* asu red */

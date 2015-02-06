@@ -7,7 +7,7 @@ defaults:
 
 base_path: "//gios-asu.github.io/"
 
-markdown: redcarpet
 kramdown:
   input: GFM
-highlighter: pygments
+  auto_ids: true
+highlighter: pygment
