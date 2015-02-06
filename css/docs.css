@@ -111,6 +111,23 @@ h1, h2 {
   right: 0;
 }
 
+/**
+ * Related Articles
+ */
+.related-articles {
+  background-color: #e5e5e5;
+  border-top: 1px solid #1e1e1e;
+  padding-bottom: 30px;
+  padding-top: 0;
+}
+
+.related-articles li {
+  margin-right: 10px;
+}
+
+.related-articles li a {
+  background-color: white;
+}
 
 /*
  * END CSS code from Bootstrap

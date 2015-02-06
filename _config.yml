@@ -10,4 +10,4 @@ base_path: "//gios-asu.github.io/"
 markdown: redcarpet
 kramdown:
   input: GFM
-highlighter: pygments
+highlighter: false
