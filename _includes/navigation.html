@@ -14,7 +14,7 @@
       {% for item in (0..site.tags.size) %}{% unless forloop.last %}
       {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
       <li class="menu-item">
-        <a title="{{ this_word }}" href="{{ site.url }}category/{{ this_word | slugify }}">{{ this_word }}</a>
+        <a title="{{ this_word }}" href="{{ site.url }}category/{{ this_word | slugify }}.html">{{ this_word }}</a>
       </li>
      {% endunless %}{% endfor %}
     </ul>
