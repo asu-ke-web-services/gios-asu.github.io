@@ -88,13 +88,77 @@ A simple menu is a dropdown menu in the navigation and is created with the follo
 
 ### Mega Menu
 
-TODO
+Mega menus are used to display many dropdown sections of related links.
+
+The sections use bootstrap's containers to fluidly display menu items.  This example is 2 columns and uses `col-md-6`. 
+
+```html
+<li class="mega-menu dropdown">
+  <a title="__navigation_item_name__" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+    __navigation_item_name__ <span class="caret"></span>
+  </a>
+  <ul role="menu" class="dropdown-menu">
+    <li class="li-row-container">
+      <div class="row">
+        <div class="column col-md-6 vertical-border-right">
+          <ul>
+            <li class="dropdown-title">Column 1</li>
+            <li><a title="__item_name__" href="__href__">__item_name__</a>
+            </li>
+            <li><a title="__item_name__" href="__href__">__item_name__</a>
+            </li>
+            <li><a title="__item_name__" href="__href__">__item_name__</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column col-md-6">
+          <ul>
+            <li class="dropdown-title">Column 2</li>
+            <li><a title="__item_name__" href="__href__">__item_name__</a>
+            </li>
+            <li><a title="__item_name__" href="__href__">__item_name__</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li>
+```
 
 <!--break-->
 
 ## Mega Footer
 
-TODO
+The Mega Footer is the section before the legal footer, but after the content of the page.  It can contains the school logo, contact information, social media links, page links, and more:
+
+```html
+<div class="big-foot">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12 space-bot-md">
+        <img class="footer-logo" src="https://sos.wp.prod.gios.asu.edu/files/2015/01/SOS_REV.png">
+        <br>            
+        <address>
+          Arizona State University<br>
+          800 South Cady Mall <br>
+          Tempe, AZ 85281<br>
+          Phone: <a class="phone-link" href="tel:(480) 727-6963">(480) 727-6963</a><br>
+          Fax: (480) 965-8087<br>
+        </address>    
+      </div>
+      <div class="col-md-6 space-bot-md">
+        <h2 data-toggle="collapse" data-target="#menu-item-596-nav">Categories  <span class="caret hidden-sm hidden-md hidden-lg"></span></h2>
+        <ul class="big-foot-nav collapse in">
+          <li class="menu-item">
+            <a title="__item_name__" href="__href__">__item_name__</a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</div>
+```
 
 <!--break-->
 
@@ -117,7 +181,7 @@ Hero units are made to callout specific content.
 </div>
 
 ```html
-<div class="hero hero-bg-img hero-action-call" style="background-image: url(image_url);">
+<div class="hero hero-bg-img hero-action-call" style="background-image: url(__image_url__);">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -303,6 +367,60 @@ Calendar dates are widgets that you can add to your application in order to allo
 
 ## Visit Campus
 
-TODO
+You can set up map blocks with the following markup:
 
+<div class="bs-example">
+  <div class="panel campus-visit">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-8 col-md-8">
+          <h2>Visit our campus</h2>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <button class="btn btn-primary pull-right">plan a visit</button>
+        </div>
+      </div><!-- /.row -->
+      <address>
+        <strong>Ira A. Fulton Schools of Engineering</strong><br>
+        Arizona State University<br>
+        P.O. Box 9309<br>
+        Brickyard 6th Floor<br>
+        Tempe, Arizona 85287-9309
+      </address>
+      <p>
+        Administration: <a href="tel:480-727-5232">(480) 727 5232</a><br>
+        Advising &amp; Student Services: <a href="tel:480-727-1874">(480) 727 1874</a>
+      </p>
+    </div>
+    <div class="iframe-overlay"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13319.17492398412!2d-111.9342584088297!3d33.428621644147384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4e1b8ff83743e70!2sIra+A.+Fulton+School+of+Engineering!5e0!3m2!1sen!2sus!4v1406847501040" width="100%" height="225" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+  </div>
+</div>
+```html
+<div class="panel campus-visit">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-8 col-md-8">
+        <h2>Visit our campus</h2>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <button class="btn btn-primary pull-right">plan a visit</button>
+      </div>
+    </div><!-- /.row -->
+    <address>
+      <strong>Ira A. Fulton Schools of Engineering</strong><br>
+      Arizona State University<br>
+      P.O. Box 9309<br>
+      Brickyard 6th Floor<br>
+      Tempe, Arizona 85287-9309
+    </address>
+    <p>
+      Administration: <a href="tel:480-727-5232">(480) 727 5232</a><br>
+      Advising &amp; Student Services: <a href="tel:480-727-1874">(480) 727 1874</a>
+    </p>
+  </div>
+  <div class="iframe-overlay"></div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13319.17492398412!2d-111.9342584088297!3d33.428621644147384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4e1b8ff83743e70!2sIra+A.+Fulton+School+of+Engineering!5e0!3m2!1sen!2sus!4v1406847501040" width="100%" height="225" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</div>
+```
 
