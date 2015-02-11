@@ -4,7 +4,7 @@ title: Page Templates
 description: "How to use the new Page Templates"
 tags: ["GIOS WordPress"]
 image:
-  feature: docks.jpg
+  feature: dock.jpg
   credit: Jonas Nilsson Lee
   creditlink: https://unsplash.imgix.net/reserve/QGXfT1CkRpmvlwtPpgul_IMG_0558.jpg?q=75&fm=jpg&s=25c25f99c3faba09b92aacf40a9e9de5
 ---
