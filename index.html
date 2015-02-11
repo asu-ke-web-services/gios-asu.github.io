@@ -42,7 +42,7 @@ image:
   <div class="well">
     <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
     <ul class="nav nav-pills nav-stacked">
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
+    {% for post in site.tags[this_word] reversed %}{% if post.title != null %}
       <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
     </ul>

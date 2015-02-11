@@ -24,7 +24,7 @@
         <a title="{{ this_word }}" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">{{ this_word }} <span class="caret"></span>
         </a>
         <ul role="menu" class="dropdown-menu">
-        {% for post in site.tags[this_word] %}{% if post.title != null %}
+        {% for post in site.tags[this_word] reversed %}{% if post.title != null %}
           <li class="menu-item"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
         {% endif %}{% endfor %}
         </ul>
