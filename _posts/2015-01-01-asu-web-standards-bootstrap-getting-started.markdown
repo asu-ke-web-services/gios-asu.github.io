@@ -71,7 +71,7 @@ This theme uses [Font Awesome](http://fortawesome.github.io/Font-Awesome/).  Boo
 
 This theme uses the Google Font Roboto.  If you do not include Roboto in your website using the instructions provided on [Google Font's website](http://www.google.com/fonts/specimen/Roboto), the font will default to 'Helvetica Neue', then Helvetica, then Arial, then the browser's default sans-serif font.
 
-For more information concerning all of the new components and CSS styles that are introduced in this theme, check out [Components]({% post_url 2015-5-2-asu-web-standards-bootstrap-components %}) and [CSS]({% post_url 2015-5-2-asu-web-standards-bootstrap-css %}).
+For more information concerning all of the new components and CSS styles that are introduced in this theme, check out [Components]({% post_url 2015-01-03-asu-web-standards-bootstrap-components %}) and [CSS]({% post_url 2015-01-02-asu-web-standards-bootstrap-css %}).
 
 ### Repo Structure
 
