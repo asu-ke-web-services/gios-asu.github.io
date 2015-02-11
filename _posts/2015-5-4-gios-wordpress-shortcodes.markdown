@@ -98,7 +98,59 @@ Example usage:
 
 ## News Slider
 
-TODO
+```php
+[news-slide tag='comma,seperated,list,of,tags' category='comma,seperated,list,of,categories']
+```
+
+The `news-slide` shortcode creates a slider from news articles in the given
+tags and categories.
+
+<!--break-->
+
+## News List
+
+```php
+[news-list tag='comma,seperated,list,of,tags' category='comma,seperated,list,of,categories']
+```
+
+The `news-list` shortcode cretaed a slider from news articles in the given
+tags and categories.
+
+
+<!--break-->
+
+## Person Blurb
+
+```php
+[person-blurb slug='slug']
+[person-blurb id=number]
+```
+
+The `person-blurb` shortcode creates blurb markup for the given person based on the `slug` or the `id` passed into the shortcode.
+
+If both a slug and an id are given, only the slug will be used.
+
+<!--break-->
+
+## Group People 
+
+```php
+[group-people slug=string (active=true/false) (relationship_type=string)]
+```
+
+The `group-people` shortcode creates markup for displaying all people in a group given the group `slug`.  Optional parameters include `active` and `relationship_type`.
+
+* Note: relationship_type is comma seperated and does not support wildcards
+
+<!--break-->
+
+## Group People By Role
+
+```php
+[group-people-by-role slug=string (active=true/false) ]
+```
+
+The `group-people-by-role` shortcode creates markup for displaying all people in a group in roles.  Optional parameters include `active`. 
 
 <!--break-->
 
@@ -141,3 +193,50 @@ The `gios-media` shortcode takes a media `slug` and displays a detailed view of 
 ```
 
 The `iframe` shortcode takes in a `src`, `width`, and `height`, and generates the HTML markup for the iframe.
+
+
+<!--break-->
+
+## Containers
+
+You can write the boiler plate for a bootstrap container using the following shortcode:
+
+```php
+[container]
+  Your content
+[/container]
+```
+
+The container can also be made to appear gray by specifying the gray attribute:
+
+```php
+[container gray=true]
+  Your content
+[/container]
+```
+
+You can also override the padding and margins for both container types:
+
+```php
+[container type="gray" margin="0" padding="0"]
+```
+
+The margin and padding options can be ANY of the following in ANY combination (order of precedence is in order, so `sm` will overwrite `bot-sm`):
+
+```
+0, sm, md, lg, xl, top-0, top-sm, top-md, top-lg, top-xl, bot-0, bot-sm, bot-md, bot-lg, bot-xl
+```
+
+<!--break-->
+
+## Sidebars
+
+You can write a sidebar for navigating the current page by using the sidebar tag.  The markup looks like this:
+
+```php
+[sidebar title='My title']
+  Text1|#idOnPage1
+  Text2|#idOnPage2
+  Text3|#idOnPage3
+[/sidebar]
+```
