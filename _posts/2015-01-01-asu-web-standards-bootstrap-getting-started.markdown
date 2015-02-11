@@ -13,7 +13,7 @@ The [ASU Web Standards Bootstrap Github repository](https://github.com/gios-asu/
 
 The repository contains CSS, JavaScript, and font files that you can use as a foundation for your website, in conjunction with Twitter Bootstrap and jQuery.
 
-If you are creating a WordPress website, we recommend using the [Wordpress Theme]({% post_url 2015-5-3-asu-web-standards-wordpress-getting-started %}) to integrate the web standards into your website.
+If you are creating a WordPress website, we recommend using the [Wordpress Theme]({% post_url 2015-02-01-asu-web-standards-wordpress-getting-started %}) to integrate the web standards into your website.
 
 If you are creating a Drupal website, please use [WebSpark](http://webspark.asu.edu/).
 
