@@ -77,7 +77,9 @@ Secondary and Gold buttons have been added for your convenience.
 A full list of classes implemented in the Web Standards.  Use the CTRL+F to find classes that you can use when using the Web Standards:
 
 <div style="max-height: 400px; overflow: auto">
+
 ```css
+
 .active
 .affix
 .alert
