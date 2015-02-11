@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Customization
-description: "New customization options available in WordPress"
-tags: ["ASU Web Standards WordPress"]
+description: "New customization settings for your WordPress site"
+tags: ["GIOS WordPress"]
 image:
-  feature: locks.jpg
-  credit: Sylwia Bartyzel
-  creditlink: https://ununsplash.imgix.net/35/BIR62RGGjGxN5nrbnzwu_3.jpg?q=75&fm=jpg&s=8a51d1e4b7685ecb5c2bd4a1fd629d11
+  feature: brushes.jpg
+  credit: Alex Jones
+  creditlink: https://ununsplash.imgix.net/photo-1423114723894-9d29d7e4aa58?q=75&fm=jpg&s=b79835a9d278e25937ff135f60cb36ec
 ---
 
-New customization settings have been added to this theme. They are available by going to `Appearance -> Customize`.
+New customization settings have been added to this theme thanks to the ASU Web Standards WordPress Theme. They are available by going to `Appearance -> Customize`.
 
 <!--break-->
 

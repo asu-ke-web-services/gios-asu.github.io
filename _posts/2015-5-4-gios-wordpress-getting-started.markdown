@@ -48,3 +48,19 @@ In order to leverage all of these features, the following plugins and themes sho
 The ASU Web Standards WordPress Theme should either be activated, or a child theme of the ASU Web Standards Wordpress Theme should be activated.
 
 The GIOS WP plugin is a private repository for use within GIOS.  This plugin has already been activated for you if you are using the MultiSite installation that GIOS provides.
+
+<!--break-->
+
+## Setup
+
+Here is a checklist of things to look for to make sure your WordPress site is ready to use:
+
+- The following pages should be created:
+    - People
+    - Media
+    - News
+    - Events
+- The Events Page should have the Events Default Template
+- The News Page should have the News Default Template
+- Yoast SEO should be installed
+- Under `SEO -> Internal Links -> Breadcrumbs Settings`, `Enable Breadcrumbs` should be checked.

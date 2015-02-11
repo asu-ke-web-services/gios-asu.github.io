@@ -126,7 +126,7 @@ tags and categories.
 [person-blurb id=number]
 ```
 
-The `person-blurb` shortcode creates blurb markup for the given person based on the `slug` or the `id` passed into the shortcode.
+The `person-blurb` shortcode creates blurb markup for the given person based on the `slug` or the `id` passed into the shortcode. This replaces the old gs-person-badge shortcode.
 
 If both a slug and an id are given, only the slug will be used.
 
@@ -138,7 +138,7 @@ If both a slug and an id are given, only the slug will be used.
 [group-people slug=string (active=true/false) (relationship_type=string)]
 ```
 
-The `group-people` shortcode creates markup for displaying all people in a group given the group `slug`.  Optional parameters include `active` and `relationship_type`.
+The `group-people` shortcode creates markup for displaying all people in a group given the group `slug`.  Optional parameters include `active` and `relationship_type`. The optional second argument 'active' denotes if the listing should include just currently active members (default, true) or everyone (false). 'relationship_type' is a comma separated list of group relationship types.
 
 * Note: relationship_type is comma seperated and does not support wildcards
 
@@ -147,10 +147,10 @@ The `group-people` shortcode creates markup for displaying all people in a group
 ## Group People By Role
 
 ```php
-[group-people-by-role slug=string (active=true/false) ]
+[group-people-by-role slug=string (active="true") (relationship_type="one,two")]
 ```
 
-The `group-people-by-role` shortcode creates markup for displaying all people in a group in roles.  Optional parameters include `active`. 
+The `group-people-by-role` shortcode creates markup for displaying all people in a group in roles. This is a slightly different listing for people in a group. Each person will be listed on one line grouped under a subheading of the relationship type along with everyone that has that relationship type. Optional parameters include `active`.
 
 <!--break-->
 
