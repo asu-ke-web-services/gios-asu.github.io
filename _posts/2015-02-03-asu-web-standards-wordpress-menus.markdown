@@ -24,6 +24,10 @@ Only the lowest level of pills will actually be clickable. If you create a three
 
 If you want to indicate that links will exit your website in the menu, go to `Custom Options->CSS Classes` and manually add the class `external-link` to you menu item.  It will add an external link icon to the right of your menu item.
 
+### External Links
+
+You can indicate that a link is external in your main navigation by adding the `external-link` class to it by going to `Screen Options -> CSS`, opening the menu block you want to indicate is external, and adding `external-link` to the CSS text input.
+
 <!--break-->
 
 ## Footer Menu

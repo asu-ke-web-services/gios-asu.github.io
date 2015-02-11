@@ -78,8 +78,7 @@ A full list of classes implemented in the Web Standards.  Use the CTRL+F to find
 
 <div style="max-height: 400px; overflow: auto">
 
-```css
-
+```
 .active
 .affix
 .alert
@@ -615,4 +614,5 @@ A full list of classes implemented in the Web Standards.  Use the CTRL+F to find
 .well-sm
 .widescreen
 ```
+
 </div>
