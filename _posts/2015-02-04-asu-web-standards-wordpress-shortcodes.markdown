@@ -44,6 +44,12 @@ The margin and padding options can be ANY of the following in ANY combination (o
 0, sm, md, lg, xl, top-0, top-sm, top-md, top-lg, top-xl, bot-0, bot-sm, bot-md, bot-lg, bot-xl
 ```
 
+Finally you can also add in additional css classes for a container by using the optional class attribute:
+
+```php
+[container class="my-special-page"]
+```
+
 <!--break-->
 
 ## Sidebars
