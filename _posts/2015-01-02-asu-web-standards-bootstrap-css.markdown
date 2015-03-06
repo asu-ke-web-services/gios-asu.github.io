@@ -13,6 +13,22 @@ In addition to all of the CSS classes that [Bootstrap](http://getbootstrap.com/c
 
 <!--break-->
 
+## ASU Box
+
+The ASU Box class adds a box around the element.
+
+<div class="asu-box">
+  <p>I am in a box.</p>
+</div>
+
+```html
+<div class="asu-box">
+  <p>I am in a box.</p>
+</div>
+```
+
+<!--break-->
+
 ## Padding and Margin Helpers
 
 The following CSS styles are available to help you add and remove padding and margins:
