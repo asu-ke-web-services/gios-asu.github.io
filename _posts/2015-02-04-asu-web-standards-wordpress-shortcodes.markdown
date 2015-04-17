@@ -64,3 +64,22 @@ You can write a sidebar for navigating the current page by using the sidebar tag
 [/sidebar]
 ```
 
+<!--break-->
+
+## Related Links
+
+You can have a related links section (preferably the last section of your Page or Post):
+
+```
+[related-links title='Additional Reading' limit=10 include_siblings=true]
+  <a href="http://google.com">Wow!</a>
+  <a href="http://google.com">Cool!</a>
+[/related-links]
+```
+
+Simply use the `[related-links]` shortcode, with an optional `title`, optional `limit`, and optional `include_siblings`.
+Your content should be a list of simple `a` tags, with one `a` tag per line.
+
+* `title` - the Title of the section. Defaults to "Additional Reading".
+* `limit` - how many related links there should be at maximum.  Defaults to "10".
+* `include_siblings` - if there are less related links than the limit, and "include_siblings" is true, then it will pull other pages that are siblings of the current page (according to the page hierarchy, not the menu).
