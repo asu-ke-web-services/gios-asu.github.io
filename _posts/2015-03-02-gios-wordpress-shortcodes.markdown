@@ -240,3 +240,29 @@ You can write a sidebar for navigating the current page by using the sidebar tag
   Text3|#idOnPage3
 [/sidebar]
 ```
+
+<!--break-->
+
+## Citations
+
+You can use a shortcode to display a list of citations:
+
+```php
+[citations group_slug="optional_group_slug_name" type="optional_type" review_status="defaults to: Published,In Press,In Review" list_by="defaults to: year" min_year="optional_year"]
+```
+
+Here is an example:
+
+```php
+[citations group_slug="dcdc" type="bookSection"  review_status="Published,In Press" min_year="2010"]
+```
+
+```html
+<h2>In Press</h2>
+ <div class='citation-list citation-list-in-press'>
+
+<p class="citation citation-id-9189"> 
+  Aggarwal, R. M. International development and sustainability. In: Heinrichs, H., G. Michelsen, P. Martens and A. D. Wiek eds., <i>Sustainability Science Handbook</i>. Springer Science.
+</p>
+...
+```
